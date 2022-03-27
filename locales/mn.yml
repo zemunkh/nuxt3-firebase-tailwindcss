@@ -1,0 +1,35 @@
+components:
+  language_switcher:
+    change_language: хэл солих
+  theme_switcher:
+    theme: theme
+    change_theme: theme солих
+pages:
+  index:
+    title: nuxt 3, янзын, эхлэл прожект
+  blank:
+    nav: blank
+    title: blank page
+    just_blank_page_with_title: just blank page with title
+  test:
+    nav: test
+    title: testing
+    counter: counter
+    increment: increment
+    decrement: decrement
+    reset: reset
+    identity: identity
+    full_name: fullName
+  about:
+    nav: тухай
+    title: тухай
+  dashboard:
+    nav: нүүр хуудас
+    title: нүүр хуудас
+    index:
+      nav: эхлэл
+      title: эхлэл
+banners:
+  welcome: сайн уу, %{app_name} тавтай морил!
+others:
+  learn_more: илүүг мэдэх
