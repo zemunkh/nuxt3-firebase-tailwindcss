@@ -1,17 +1,6 @@
 <template>
   <PageWrapper class="flex justify-center items-center">
-
-
     <Counter/>
-    <!-- <div class="flex flex-col z-10">
-      <h1 class="text-center">
-
-      </h1>
-
-      <div class="flex space-x-4 justify-center mt-10">
-
-      </div>
-    </div> -->
   </PageWrapper>
 </template>
 

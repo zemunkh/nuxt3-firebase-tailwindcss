@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-  import { useStore } from '~/stores/store'
+  import { useStore } from '~/store/store'
 
   const store = useStore()
   const increment = () => store.increment()
