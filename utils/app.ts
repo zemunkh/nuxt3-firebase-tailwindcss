@@ -12,10 +12,10 @@ export interface IApp {
 export function AppSetup() {
   // declare app information
   const app: IApp = {
-    name: 'Nuxt 3 Awesome Starter',
+    name: 'Nuxt 3 Firebase TailwindCSS',
     author: {
-      name: 'viandwi24',
-      link: 'https://github.com/viandwi24',
+      name: 'zemunkh',
+      link: 'https://github.com/zemunkh',
     },
   }
   useState('app', () => app)
