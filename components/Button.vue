@@ -23,7 +23,7 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  type: {
+  buttonType: {
     type: String,
     default: 'primary',
   },
@@ -53,6 +53,8 @@ const styles = reactive({
     'text-white bg-gray-800 hover:bg-white hover:text-gray-800 hover:border-gray-900 dark:text-gray-800 dark:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-100 dark:border-white',
   secondary:
     'text-gray-800 bg-white hover:border-gray-900  dark:border-gray-900 dark:text-white dark:bg-gray-800 dark:hover:border-white',
+  blue:
+    'text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800',
 })
 const sizes = reactive({
   lg: 'h-12 px-8 text-lg rounded-lg',
@@ -62,7 +64,7 @@ const sizes = reactive({
 })
 
 // state
-const selectedStyle = computed(() => styles[props.type] || styles.primary)
+const selectedStyle = computed(() => styles[props.buttonType] || styles.primary)
 const selectedSize = computed(() => sizes[props.size] || sizes.lg)
 
 // methods

@@ -43,10 +43,7 @@ const getNick = (req) => {
     null
   }`;
   const isLocal = originHost.indexOf("localhost") > 0 ? true : false;
-  let nick =
-    originHost.replace("https://", "").replace("http://", "").split(".")[0] ||
-    "zemunkh";
-  if (nick.indexOf("localhost") > -1 || !nick || nick === "null")
-    nick = "zemunkh";
+  let nick = originHost.replace("https://", "").replace("http://", "").split(".")[0] || "zemunkh";
+  if (nick.indexOf("localhost") > -1 || !nick || nick === "null") nick = "zemunkh";
   return { nick, originHost, isLocal };
 };

@@ -1,10 +1,11 @@
 <template>
   <PageWrapper class="flex justify-center items-center">
-    <Counter/>
+    <div>Welcome</div>
   </PageWrapper>
 </template>
 
 <script lang="ts" setup>
+import Profile from '~~/components/Profile.vue';
 
 definePageMeta({
   layout: 'page',

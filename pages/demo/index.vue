@@ -1,7 +1,13 @@
 <template>
   <PageWrapper class="flex justify-center items-center">
-    <div>
-      Demo
-    </div>
+
+    <Add/>
+    <Counter/>
   </PageWrapper>
 </template>
+
+<script setup>
+  import Add from "~/components/Products/Add";
+
+
+</script>

@@ -12,7 +12,7 @@ export interface IApp {
 export function AppSetup() {
   // declare app information
   const app: IApp = {
-    name: 'Nuxt 3 Firebase TailwindCSS',
+    name: 'Portfolio by Zee',
     author: {
       name: 'zemunkh',
       link: 'https://github.com/zemunkh',

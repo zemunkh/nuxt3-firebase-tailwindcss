@@ -9,8 +9,10 @@
         "editor.tabSize": 2,
     },
     "cSpell.words": [
+      "composables",
       "Firestore",
       "Nuxt",
+      "pinia",
       "vueuse"
     ],
 }

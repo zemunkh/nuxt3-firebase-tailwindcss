@@ -38,12 +38,15 @@
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/line-clamp": "^0.3.1",
     "@tailwindcss/typography": "^0.5.2",
+    "@vee-validate/i18n": "^4.5.10",
+    "@vee-validate/rules": "^4.5.10",
     "cookie": "^0.4.2",
     "firebase": "^9.6.10",
     "js-cookie": "^3.0.1",
     "lodash": "^4.17.21",
     "pinia-plugin-persistedstate-2": "^1.0.0",
     "postcss-loader": "^6.2.1",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.0.23",
+    "vee-validate": "^4.5.10"
   }
 }

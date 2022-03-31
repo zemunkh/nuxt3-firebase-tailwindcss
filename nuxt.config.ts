@@ -13,7 +13,7 @@ declare module '@nuxt/schema' {
 export default defineNuxtConfig({
   // meta
   meta: {
-    title: 'Nuxt 3 with Firebase',
+    title: 'Portfolio by Zee',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
@@ -80,11 +80,6 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
       availableLocales: ['en', 'mn', 'ja'],
     },
-  },
-
-  // vueuse
-  vueuse: {
-    ssrHandlers: true,
   },
 
   // windicss

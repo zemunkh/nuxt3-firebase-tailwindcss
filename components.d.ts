@@ -12,6 +12,7 @@ declare module 'vue' {
     'IconUil:apps': typeof import('~icons/uil/apps')['default']
     'IconUil:bars': typeof import('~icons/uil/bars')['default']
     'IconUil:clock': typeof import('~icons/uil/clock')['default']
+    'IconUil:github': typeof import('~icons/uil/github')['default']
     'IconUil:laptop': typeof import('~icons/uil/laptop')['default']
     'IconUil:moon': typeof import('~icons/uil/moon')['default']
     'IconUil:sun': typeof import('~icons/uil/sun')['default']
