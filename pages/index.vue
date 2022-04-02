@@ -1,11 +1,11 @@
 <template>
   <PageWrapper class="flex justify-center items-center">
-    <div>Welcome</div>
+    <Landing />
   </PageWrapper>
 </template>
 
 <script lang="ts" setup>
-import Profile from '~~/components/Profile.vue';
+import Landing from '~~/components/Landing.vue';
 
 definePageMeta({
   layout: 'page',
