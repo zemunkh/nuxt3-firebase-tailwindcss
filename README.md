@@ -8,7 +8,7 @@ Nuxt 3 with Firebase services
 
 <p align="center">
 <br>
-<a href="https://google.com/">🖥 Online Preview</a>
+<a href="https://zemunkh-418ce.web.app/">🖥 Online Preview</a>
 <br><br>
 </p>
 
@@ -26,7 +26,7 @@ Nuxt 3 with Firebase services
 
 - 🏎 Firebase cloud functions and deploy
 
-- 🦾 Mainly TypeScript
+- 🦾 Partially TypeScript and JS
 
 ## Plugins
 
