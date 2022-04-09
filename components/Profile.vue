@@ -100,10 +100,6 @@
                   <i class="fas fa-briefcase mr-2 text-lg  text-gray-500"></i
                   >Software engineer - Nuxt 3, Vue 3, Flutter, Node, Python
                 </div>
-                <div class="mb-2 dark:text-white text-gray-700">
-                  <i class="fas fa-university mr-2 text-lg text-gray-500"></i
-                  >Korean Aerospace University
-                </div>
               </div>
               <div class="mt-10 py-10 border-t border-gray-300 text-center">
                 <div class="flex flex-wrap justify-center">

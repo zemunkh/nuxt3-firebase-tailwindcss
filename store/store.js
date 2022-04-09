@@ -4,9 +4,7 @@ import { useFirestore } from '~~/composables/useFirestore'
 export const useStore = defineStore('global', {
   state: () => ({
     counter: 0,
-    items: [],
     nick: '',
-    posts: [],
     products: []
   }),
   actions: {
@@ -16,23 +14,21 @@ export const useStore = defineStore('global', {
     decrement() {
       this.counter--
     },
-    async list(collection, where = [['fnac', '==', false]], startAfter, nick, limit = 25 ) {
-      if(this.nick === '') { this.nick = nick; console.log('Nick changed! 🚨');}
+    async list(collection, where = [['active', '==', true]], startAfter, limit = 25 ) {
       const { list } = useFirestore()
       try {
         const data = await list(collection,
         {
           where: where,
           startAfter: startAfter,
-          limit: limit,
-          api: false
+          limit: limit
         })
         this[collection] = data ? data : null
         this.error = null;
         console.log('Length ✅: ', data.length);
         return this[collection]
       } catch (e) {
-        this.posts = []
+        this[collection] = []
         this.error = e;
         return false;
       }

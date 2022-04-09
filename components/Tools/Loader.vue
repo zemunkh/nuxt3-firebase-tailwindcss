@@ -2,7 +2,7 @@
   <transition name="fade">
     <div v-if="isLoading" class="loading">
       <div class="card">
-        <div class="sk-chase" style="margin-top: 12px; margin-left: 12px;">
+        <div class="sk-chase" style="margin-top: 14px; margin-left: 12px;">
           <div class="sk-chase-dot"></div>
           <div class="sk-chase-dot"></div>
           <div class="sk-chase-dot"></div>

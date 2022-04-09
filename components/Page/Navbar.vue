@@ -41,11 +41,7 @@
   const mobileNavMenu = ref(false)
   const navigation = ref([
     { name: 'Profile', href: '/profile', current: false },
-    { name: 'Firebase demo', href: '/demo', current: false }
+    { name: 'Firebase demo', href: '/demo', current: false },
+    { name: 'Counter', href: '/counter', current: false }
   ])
-
-  const doClose = (close) => {
-    close();
-  };
-
 </script>

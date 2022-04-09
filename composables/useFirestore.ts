@@ -14,7 +14,6 @@ import {
   startAfter
 } from 'firebase/firestore';
 
-// import firebaseApp from './firebaseInit';
 import { useStore } from '~~/store/store'
 
 export const useFirestore = () => {
@@ -22,19 +21,11 @@ export const useFirestore = () => {
   const db = getFirestore($firebaseApp);
   const store = useStore();
   console.log('On firestore Nick: ', store.nick);
-
   // clean the snapshots listeners unsubscribe()
   const createId = () => { return btoa(new Date().getTime().toString()).replace(new RegExp('=', 'g'), '') }
 
   const getPath = (collection) =>  {
-    let path;
-    if(store.nick === 'zemunkh' || store.nick === 'yesmkt') {
-      path = `${collection}/apple/${collection}`
-    } else {
-      path = `${collection}/${store.nick}/${collection}`
-    }
-    console.log('Path 🚨: ', path);
-    return path;
+    return collection;
   }
 
   const get = async (_col, id) => {
@@ -112,8 +103,8 @@ export const useFirestore = () => {
 
   const list = async (_col, args) => {
     const path = getPath(_col)
-    console.log('Is Client 👁🚨: ', process.client);
-    
+    // console.log('Is Client 👁🚨: ', process.client);
+    console.log('Path: ', path)
     const col = collection(db, path)
     const qry = []
     if (args && args.where) for (const w of args.where) qry.push(where(w[0], w[1], w[2]))
